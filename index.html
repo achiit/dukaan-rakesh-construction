@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rakesh Construction – All types of construction</title>
+<meta name="description" content="Rakesh Construction builds roads, buildings, schools and houses with complete finishing. Call or WhatsApp 7321803535.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDEBE6; --surface:#FFFFFF; --ink:#16232E; --muted:#51606B; --line:#CFCBC2;
+  --accent:#F2B705; --accent-ink:#16232E; --dark:#16232E; --dark-ink:#F4F2EC; --wa:#1FA855;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#10181F; --surface:#1A2630; --ink:#F1EFE9; --muted:#A5B0B8; --line:#2C3A45; --dark:#0B1116; --dark-ink:#F4F2EC;}
+}
+:root[data-theme="dark"]{--bg:#10181F; --surface:#1A2630; --ink:#F1EFE9; --muted:#A5B0B8; --line:#2C3A45; --dark:#0B1116; --dark-ink:#F4F2EC;}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Barlow,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;line-height:1;margin:0;letter-spacing:.005em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;max-width:1080px;margin:0 auto}
+.brand{font:800 26px/1 "Barlow Condensed","Arial Narrow",sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:22px;height:22px;background:var(--accent);display:inline-block;clip-path:polygon(0 100%,0 40%,50% 0,100% 40%,100% 100%)}
+.call-sm{font-weight:600;text-decoration:none;border:2px solid var(--ink);padding:8px 14px;border-radius:4px;white-space:nowrap}
+
+/* hero */
+.hero{background-color:var(--accent);color:var(--accent-ink);position:relative;overflow:hidden;
+  background-image:linear-gradient(rgba(22,35,46,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(22,35,46,.12) 1px,transparent 1px);
+  background-size:40px 40px}
+.hero .wrap{padding-top:64px;padding-bottom:0;position:relative}
+.hero h1{font-size:clamp(54px,13vw,128px);font-weight:800;max-width:9ch}
+.hero p{max-width:34ch;font-size:20px;margin:22px 0 28px;color:#2B2A1A;font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:4px;font-weight:600;font-size:18px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn.call{background:#16232E;color:#F2B705}
+.btn.wa{background:var(--wa);color:#fff}
+.btn:hover{filter:brightness(1.08)}
+.skyline{display:block;width:100%;height:auto;margin-top:48px;max-height:220px}
+.skyline .crane{transform-origin:640px 40px;animation:sway 6s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-1.2deg)}to{transform:rotate(1.2deg)}}
+@media (prefers-reduced-motion:reduce){.skyline .crane{animation:none}html{scroll-behavior:auto}}
+
+/* sections */
+section{padding:72px 0}
+h2{font-size:clamp(38px,7vw,60px);font-weight:700;margin-bottom:12px}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 36px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));border-top:3px solid var(--ink);border-left:1px solid var(--line)}
+.svc{padding:24px 22px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+.svc h3{font-size:28px;font-weight:700;margin-bottom:8px}
+.svc p{margin:0;color:var(--muted);font-size:16px}
+.band{background:var(--dark);color:var(--dark-ink)}
+.band .lead{color:#C3CACE}
+.band h2{color:#F2B705}
+.svc h3{border-left:6px solid var(--accent);padding-left:10px}
+.svc{border-top:4px solid var(--accent)}
+.points{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;list-style:none;margin:0;padding:0}
+.points li{border-left:4px solid var(--accent);padding-left:16px}
+.points b{display:block;font:700 26px/1.1 "Barlow Condensed","Arial Narrow",sans-serif;margin-bottom:6px}
+.points span{color:#C3CACE;font-size:16px}
+
+/* contact */
+.details{margin:0 0 22px;display:grid;gap:12px}
+.details div{border-left:5px solid var(--accent);padding-left:14px}
+.details dt{font-weight:600;font-size:14px;color:var(--muted)}
+.details dd{margin:0;font-size:18px;overflow-wrap:anywhere}
+.contact{display:grid;gap:32px;grid-template-columns:1fr}
+@media (min-width:820px){.contact{grid-template-columns:1fr 1fr;align-items:start}}
+.num{font:800 clamp(44px,9vw,76px)/1 "Barlow Condensed","Arial Narrow",sans-serif;display:block;text-decoration:none;margin:6px 0 20px}
+form{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);padding:22px;border-radius:4px;display:grid;gap:14px}
+label{font-weight:600;font-size:15px;display:grid;gap:6px}
+input,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px;width:100%}
+textarea{min-height:100px;resize:vertical}
+form .btn{justify-content:center}
+footer{background:var(--accent);color:var(--accent-ink);border-top:1px solid var(--line);padding:24px 20px calc(24px + env(safe-area-inset-bottom,0px));text-align:center;font-size:15px;font-weight:500}
+
+/* sticky mobile bar */
+.bar{display:none}
+@media (max-width:640px){
+  .bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:20;padding-bottom:env(safe-area-inset-bottom,0px);background:var(--dark)}
+  .bar a{padding:15px;text-align:center;font-weight:600;text-decoration:none;color:#fff}
+  .bar .c{background:var(--accent);color:var(--accent-ink)}
+  .bar .w{background:var(--wa)}
+  footer{padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+  .call-sm{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#top"><i></i>Rakesh Construction</a>
+  <a class="call-sm" href="tel:+917321803535">Call 7321803535</a>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>We build what lasts.</h1>
+      <p>Roads, buildings, schools and houses. Rakesh Construction does all types of construction, with complete finishing.</p>
+      <div class="btns">
+        <a class="btn call" href="tel:+917321803535">Call 7321803535</a>
+        <a class="btn wa" href="https://wa.me/917321803535?text=Hello%20Rakesh%20Construction%2C%20I%20need%20a%20construction%20quote." target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+      <svg class="skyline" viewBox="0 0 1000 220" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        <g fill="none" stroke="#16232E" stroke-width="3">
+          <path d="M0 218H1000"/>
+          <!-- building frame -->
+          <path d="M80 218V90H260V218M80 150H260M80 120H260M140 90V218M200 90V218"/>
+          <path d="M300 218V130H430V218M300 175H430M365 130V218"/>
+          <path d="M470 218V60H560V218M470 100H560M470 140H560M470 180H560"/>
+          <path d="M800 218V110H940V218M800 150H940M870 110V218"/>
+        </g>
+        <g class="crane" fill="none" stroke="#16232E" stroke-width="3">
+          <path d="M640 218V40M660 218V40M640 70L660 40M640 100L660 70M640 130L660 100M640 160L660 130M640 190L660 160"/>
+          <path d="M540 40H780M640 40L600 20H700L660 40"/>
+          <path d="M760 40V100" stroke-dasharray="4 4"/>
+          <rect x="745" y="100" width="30" height="18" fill="#16232E" stroke="none"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What we build</h2>
+      <p class="lead">From roads to homes, we handle the work from the first foundation to the final finish.</p>
+      <div class="services">
+        <div class="svc"><h3>Roads</h3><p>Road building, paving, drains and culverts.</p></div>
+        <div class="svc"><h3>Buildings</h3><p>Offices, shops, godowns and apartment blocks.</p></div>
+        <div class="svc"><h3>Schools</h3><p>School buildings, classrooms and boundary walls.</p></div>
+        <div class="svc"><h3>Houses</h3><p>New homes built to your plan and budget.</p></div>
+        <div class="svc"><h3>Complete finishing</h3><p>Plastering, painting, tiles, flooring and woodwork.</p></div>
+        <div class="svc"><h3>Roofing and waterproofing</h3><p>RCC slabs, roof repair and leak protection.</p></div>
+        <div class="svc"><h3>Renovation and repair</h3><p>Fix, extend or modernise your existing building.</p></div>
+        <div class="svc"><h3>Any other construction</h3><p>Don’t see your work listed? Call and ask.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>How we work</h2>
+      <p class="lead">Simple, clear and on your terms.</p>
+      <ul class="points">
+        <li><b>Clear quote first</b><span>You know the cost and the work before we start.</span></li>
+        <li><b>Good materials</b><span>Sound materials and careful workmanship on every job.</span></li>
+        <li><b>Work finished on time</b><span>We agree a schedule and keep you updated.</span></li>
+        <li><b>Easy to reach</b><span>Call or WhatsApp us directly, any time you have a question.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div>
+        <h2>Get a free quote</h2>
+        <p class="lead">Call or WhatsApp us with your plan. We will get back to you.</p>
+        <a class="num" href="tel:+917321803535">7321803535</a>
+        <dl class="details">
+          <div><dt>Proprietor</dt><dd>Rakesh Kumar</dd></div>
+          <div><dt>Address</dt><dd>Vill. Haripur, P.O. Gangeya, Dist. Muzaffarpur, Bihar – 843321</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:rakeshconst36@gmail.com">rakeshconst36@gmail.com</a></dd></div>
+          <div><dt>GSTIN</dt><dd>10CSWPK6458G1ZD</dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn call" href="tel:+917321803535">Call now</a>
+          <a class="btn wa" href="https://wa.me/917321803535" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+      </div>
+      <form id="enquiry">
+        <label>Your name<input name="name" autocomplete="name" required></label>
+        <label>What do you want built?<textarea name="work" required placeholder="Example: 2-floor house, 1200 sq ft"></textarea></label>
+        <label>Your location<input name="place" autocomplete="address-level2"></label>
+        <button class="btn wa" type="submit">Send on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>© Rakesh Construction · Prop. Rakesh Kumar · Muzaffarpur, Bihar<br>GSTIN 10CSWPK6458G1ZD · Phone and WhatsApp 7321803535 · rakeshconst36@gmail.com</footer>
+
+<nav class="bar" aria-label="Contact">
+  <a class="c" href="tel:+917321803535">Call</a>
+  <a class="w" href="https://wa.me/917321803535" target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+
+<script>
+document.getElementById('enquiry').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target;
+  var msg='Hello Rakesh Construction, my name is '+f.name.value+'. I need: '+f.work.value+(f.place.value?'. Location: '+f.place.value:'')+'.';
+  window.open('https://wa.me/917321803535?text='+encodeURIComponent(msg),'_blank','noopener');
+});
+</script>
+</body>
+</html>
